@@ -24,3 +24,16 @@ function calculatePayout(): SongType {
     },
   };
 }
+
+type Cat = {
+  numLives: number;
+};
+
+type Dog = {
+  breed: string;
+};
+
+type CatDog = Cat &
+  Dog & {
+    age: number;
+  };
